@@ -1,0 +1,266 @@
+/*** Project Meta ***/
+
+/* general - line 13 */
+
+/* header - line 39 */
+
+/* main content - line 19 */
+
+/* footer - line 144 */
+
+/** GENERAL **/
+
+/* Mobile View */
+
+.html {
+  font-size: 87.5%;
+  scroll-behavior: smooth;
+  background-color: darkolivegreen;
+}
+
+.body {
+  position: relative;
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.appwidth {
+  max-width: 80rem;
+  width: 80%;
+  margin: auto;
+}
+
+/** header **/
+
+.header {
+  background-color: rgb(200, 200, 200);
+}
+
+.applogo {
+  padding-right: 9%;
+}
+
+.logoimg {
+  width: 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.tvshows {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.tvshows,
+.about,
+.contact {
+  font-size: 1.3rem;
+  padding-right: 10%;
+}
+
+/* Main Content */
+
+.main {
+  padding: 4rem 0;
+}
+
+.thumbnail {
+  border-radius: 5%;
+}
+
+.img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.loader {
+  padding: 10rem;
+  font-size: 4rem;
+}
+
+.shows {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: auto;
+}
+
+.comments {
+  display: block;
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.15rem;
+  border: 1px solid black;
+}
+
+.comments1 {
+  display: block;
+  width: 50%;
+  padding: 0.3rem;
+  font-size: 1.15rem;
+  border: 1px solid black;
+  margin-left: 5%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+
+.likesinfo {
+  padding: 0 0 0.6rem 0;
+  text-align: right;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.commenttemplate {
+  max-width: 80rem;
+  width: 80%;
+  margin: auto;
+}
+
+.cthumbnail {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.viewcomments {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.commentlist {
+  padding: 1rem 1.5rem;
+}
+
+.addacomment {
+  padding: 0 5%;
+}
+
+.commentheader {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.yourname {
+  width: 50%;
+  padding: 0.5rem 0;
+}
+
+.yourname,
+.yourinsight {
+  display: block;
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
+  padding-left: 0.4rem;
+}
+
+.yourinsight {
+  width: 70%;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  width: 20px;
+}
+
+.showtitle {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 384px) {
+  .shows {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .shows {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shows {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .shows {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgb(200, 200, 200);
+}
+
+.foot {
+  padding: 2rem 0;
+  font-size: 1.3rem;
+}
