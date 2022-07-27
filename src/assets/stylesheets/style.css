@@ -1,25 +1,17 @@
-/*** Project Meta ***/
-
-/* general - line 13 */
-
-/* header - line 39 */
-
-/* main content - line 19 */
-
-/* footer - line 144 */
-
-/** GENERAL **/
-
-/* Mobile View */
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
 
 .html {
   font-size: 87.5%;
   scroll-behavior: smooth;
-  background-color: darkolivegreen;
 }
 
 .body {
   position: relative;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .offscreen {
@@ -42,7 +34,7 @@
 /** header **/
 
 .header {
-  background-color: rgb(200, 200, 200);
+  background-color: var(--secondary-color);
 }
 
 .applogo {
@@ -76,10 +68,6 @@
   padding: 4rem 0;
 }
 
-.thumbnail {
-  border-radius: 5%;
-}
-
 .img {
   width: 100%;
   border-radius: 5%;
@@ -92,8 +80,14 @@
 
 .shows {
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
   grid-template-columns: auto;
+}
+
+.show {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 
 .comments {
@@ -102,6 +96,7 @@
   padding: 0.3rem;
   font-size: 1.15rem;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .comments1 {
@@ -115,13 +110,15 @@
 
 .info {
   display: flex;
-  justify-content: space-between;
-  padding: 0.6rem 0;
+  flex-direction: column;
+  padding: 0.6rem 0.2rem;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .likesinfo {
   padding: 0 0 0.6rem 0;
-  text-align: right;
+  text-align: center;
 }
 
 /* The Modal (background) */
@@ -224,6 +221,7 @@
 
 .logo {
   width: 20px;
+  cursor: pointer;
 }
 
 .showtitle {
@@ -257,10 +255,11 @@
 /* Footer */
 
 .footer {
-  background-color: rgb(200, 200, 200);
+  background-color: var(--secondary-color);
 }
 
 .foot {
   padding: 2rem 0;
   font-size: 1.3rem;
+  text-align: center;
 }

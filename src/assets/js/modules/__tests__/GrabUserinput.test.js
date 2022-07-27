@@ -41,7 +41,7 @@ let store = [
  
  document.body.innerHTML = '<div class=\'shows\'></div>';
 
- // like method
+ // like test
 describe('display amount of likes', () => {
    it('counts likes', () => {
     const [ shows, likes, comments ] = store;
@@ -57,7 +57,7 @@ describe('display amount of likes', () => {
    });
 })
 
-// open comment method
+// comment test
 describe('display number of comments', () => {
   it('counts number of existing comment objects', () => {
    let counter;
@@ -75,7 +75,7 @@ describe('display number of comments', () => {
    expect(counter).toBe(comments.length);
   });
 });
-// comment method
+
 describe('display amount of newly created comments', () => {
   it('counts newly created comment objects', () => {
    const [ shows, likes, comments ] = store;
