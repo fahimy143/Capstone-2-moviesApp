@@ -56,3 +56,36 @@ describe('display amount of likes', () => {
      expect(counter).toEqual(likeCount);
    });
 })
+
+// open comment method
+describe('display number of comments', () => {
+  it('counts number of existing comment objects', () => {
+   let counter;
+   const [ shows, likes, comments ] = store;
+   if (comments.length === 0) {
+     counter = 0;
+   } else {
+     counter = 0;
+     comments.forEach((element) => {
+       if (element) {
+         counter += 1;
+       }
+     });
+   }
+   expect(counter).toBe(comments.length);
+  });
+});
+// comment method
+describe('display amount of newly created comments', () => {
+  it('counts newly created comment objects', () => {
+   const [ shows, likes, comments ] = store;
+   let counter = 0;
+   comments.forEach((element) => {
+     if (element) {
+       counter += 1;
+     }
+   });
+  expect(counter).toEqual(comments.length);
+  });
+})
+
