@@ -106,11 +106,16 @@
 
 .comments1 {
   display: block;
-  width: 50%;
+  width: 26%;
   padding: 0.3rem;
-  font-size: 1.15rem;
+  font-size: 2rem;
   border: 1px solid black;
-  margin-left: 5%;
+  margin: 18px 0 0 58px;
+}
+
+.comments1:hover {
+  background-color: #aaa;
+  color: #fff;
 }
 
 .info {
@@ -182,6 +187,7 @@
 
 .details {
   padding: 1rem;
+  margin-left: 40px;
 }
 
 .viewcomments {
@@ -192,6 +198,7 @@
 
 .commentlist {
   padding: 1rem 1.5rem;
+  margin-left: 40px;
 }
 
 .addacomment {
@@ -205,8 +212,9 @@
 }
 
 .yourname {
-  width: 50%;
-  padding: 0.5rem 0;
+  margin: 4px 0 15px 23px;
+  width: 199px;
+  padding: 10px;
 }
 
 .yourname,
@@ -218,8 +226,9 @@
 }
 
 .yourinsight {
-  width: 70%;
+  width: 60%;
   padding: 0.5rem 0;
+  margin-left: 21px;
 }
 
 .logo {
@@ -263,4 +272,11 @@
 .foot {
   padding: 2rem 0;
   font-size: 1.3rem;
+}
+
+.runtime {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 80px;
+  margin-top: -13px;
 }
