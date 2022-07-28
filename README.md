@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Movie App live demo]()
+[Movie App live demo](https://fahimy143.github.io/Capstone-2-moviesApp/dist/)
 
 ## Authors
 
