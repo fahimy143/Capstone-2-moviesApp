@@ -1,4 +1,5 @@
-import moment from 'moment';
+/*eslint-disable*/
+import moment from './moment';
 import {
   getMovieComments,
   getMovieDetails,
@@ -194,9 +195,9 @@ const display = async (movie) => {
   card.appendChild(title);
   const numberLikes = document.createElement('p');
   numberLikes.classList.add('number-likes');
-  numberLikes.innerText = `Likes: ${await getItem().then((data) => data.find((element) => element.item_id === movie.id) === undefined
+  numberLikes.innerText = `Likes: ${await getItem().then((data) => (data.find((element) => element.item_id === movie.id) === undefined
     ? 0
-    : data.find((element) => element.item_id === movie.id).likes)}`;
+    : data.find((element) => element.item_id === movie.id).likes))}`;
   card.appendChild(numberLikes);
   const commentsBtn = document.createElement('button');
   commentsBtn.classList.add('comments-btn');
