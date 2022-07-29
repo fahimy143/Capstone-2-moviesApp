@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie App</title>
 </head>
-<body>
-    <h1>Hello webpack!</h1>
+
+<body class="body">
+  <header class="header">
+    <nav class="navbar appwidth">
+      <div class="applogo">
+        <img class="logoimg" src="https://img.icons8.com/wired/256/000000/netflix.png" alt="logoimg"/>
+      </div>
+      <div class="tvshows">Shows(<span class='num'></span>)</div>
+      <div class="about">About</div>
+      <div class="contact">Contact</div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="shows appwidth"></div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class='commentcontent'></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="foot appwidth">
+      Allright reserved &copy; Mustafa Fahimy and Karam Fouad!
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,290 @@
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+.html {
+  font-size: 87.5%;
+  scroll-behavior: smooth;
+}
+
+.body {
+  position: relative;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.appwidth {
+  max-width: 80rem;
+  width: 80%;
+  margin: auto;
+}
+
+/** header **/
+
+.header {
+  background-color: var(--secondary-color);
+}
+
+.applogo {
+  padding-right: 9%;
+}
+
+.logoimg {
+  width: 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.tvshows {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.tvshows,
+.about,
+.contact {
+  font-size: 1.3rem;
+  padding-right: 10%;
+}
+
+/* Main Content */
+
+.main {
+  padding: 4rem 0;
+}
+
+.img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.loader {
+  padding: 10rem;
+  font-size: 4rem;
+}
+
+.shows {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto;
+}
+
+.show {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.comments {
+  display: block;
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.15rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.comments1 {
+  display: block;
+  width: 26%;
+  padding: 0.3rem;
+  font-size: 2rem;
+  border: 1px solid black;
+  margin: 18px 10px 10px 58px;
+}
+
+.comments1:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.2rem;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.likesinfo {
+  padding: 0 0 0.6rem 0;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: #fff;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.commenttemplate {
+  max-width: 80rem;
+  width: 80%;
+  margin: auto;
+}
+
+.cthumbnail {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.cimg {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.details {
+  padding: 1rem;
+  margin-left: 40px;
+}
+
+.viewcomments {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.commentlist {
+  padding: 1rem 1.5rem;
+  margin-left: 40px;
+}
+
+.addacomment {
+  padding: 0 5%;
+}
+
+.commentheader {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.yourname {
+  margin: 4px 0 15px 23px;
+  width: 199px;
+  padding: 10px;
+}
+
+.yourname,
+.yourinsight {
+  display: block;
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
+  padding-left: 0.4rem;
+}
+
+.yourinsight {
+  width: 60%;
+  padding: 0.5rem 4px;
+  margin-left: 21px;
+}
+
+.logo {
+  width: 20px;
+  cursor: pointer;
+}
+
+.showtitle {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 384px) {
+  .shows {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .shows {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shows {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .shows {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--secondary-color);
+}
+
+.foot {
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.runtime {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 80px;
+  margin-top: -13px;
+}
+
+.commentcontent {
+  background-color: var(--primary-color);
+}
